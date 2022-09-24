@@ -12,24 +12,17 @@ const posMessage = ['Today is your lucky day', 'You are amazing', 'Your are shin
 // critsism messages
 const critMessage = ['watch your back', 'work harder','read more', 'learn to code', 'exersice more'];
 
-console.log('Hi i made it finally');
 
 // Create a function 
 const ranGen = (arr) => {
 
       let ranNum = Math.floor(Math.random()*arr.length);
-      console.log(arr[ranNum]);
+      return arr[ranNum];
 
 }
 
-ranGen(starSign);
+// Output full message to console
 
-// const ranPos = () => {
-    
-// }
+console.log('YOUR STAR SIGN IS: ' +ranGen(starSign) + '\n' + ranGen(posMessage) + '\n' + ranGen(critMessage));
 
-// const ranCrit = () => {
-    
-// }
 
-    
